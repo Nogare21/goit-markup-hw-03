@@ -10,8 +10,12 @@ a {
   color: #2e2f42;
 }
 
-ul {
+/* reset */
+
+ul, ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 h2,
@@ -19,7 +23,38 @@ h3 {
   color: #2e2f42;
 }
 
-/* Header */
+/* common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15 px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+padding: 24px 0;
+margin-right: 76px;
+}
 
 .header-logo-link,
 .footer-logo-link {
@@ -42,7 +77,15 @@ h3 {
   color: #2e2f42;
 }
 
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .navigation-list-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
@@ -56,15 +99,23 @@ h3 {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
+  display: block
+  padding: 24px 0;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
